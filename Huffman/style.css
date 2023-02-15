@@ -1,0 +1,217 @@
+:root{
+    --nodeColor: rgb(114, 192, 37);
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --headerfooter: rgb(37, 36, 36);
+}
+
+*{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+    display: table;
+    min-height: 100vh;
+    min-width: fit-content;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+header{
+    min-width: fit-content;
+    display: flex;
+    background-color: var(--headerfooter);
+    width: 100%;
+    box-shadow: var(--shadow);
+    height: 8vh;
+    align-items: center;
+    gap: 1%;
+}
+
+.webTitle{
+    color: white;
+    font-size: xx-large;
+    margin-left: 2%;
+}
+
+footer{
+    min-width: 100%;
+    box-shadow: var(--shadow);
+    height: fit-content;
+    align-items: center;
+    background-color: var(--headerfooter);
+    display: table-row;
+    margin-top: auto;
+}
+
+.name{
+    margin-left: 2%;
+    color: white;
+}
+
+.nameContainer{
+    padding: 1%;
+}
+
+.siteContainer{
+    background-color: rgb(27, 27, 27);
+    min-width: fit-content;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    padding: 3%;
+}
+
+.stringInput{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 50vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vh;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.inputField{
+    width: 80%;
+    border: hidden;
+    outline: none;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 50vw;
+    font-size: x-large;
+}
+
+.submit{
+    height: 80%;
+    width:15%;
+    background-color: white;
+    border: none;
+    border-left: 0.05em solid gray;
+    border-radius: 0 50vw 50vw 0;
+    font-size: x-large;
+    color: black;
+    text-align: center
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.code{
+    color: white;
+    font-size: x-large;
+}
+
+.codeTitle{
+    color: white;
+    font-size: x-large;
+    border-bottom: 0.05em solid white
+}
+
+.codeContainer{
+    padding: 2%;
+    background-color: rgb(21, 21, 21);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+}
+
+.codeContainer:empty{
+    display: none;
+}
+
+.layerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: fit-content;
+}
+
+.branch{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.upperbranch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 0.01rem solid black;*/
+    width: 50%;
+    margin: 0.5vw;
+}
+
+.node{
+    position: relative;
+    color: white;
+    background-color: var(--nodeColor);
+    display: flex;
+    flex-direction: column;
+    border: darkgreen solid 0.2rem;
+    border-radius: 100%;
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    box-shadow: var(--shadow);
+}
+
+.node{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+.line{
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.dot{
+    display: inline-block;
+    position: relative;
+    color: white;
+    background-color: var(--nodeColor);
+    display: flex;
+    flex-direction: column;
+    border: darkgreen solid 0.2rem;
+    border-radius: 100%;
+    min-width: 20px;
+    min-height: 20px;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    box-shadow: var(--shadow);
+}
+
+.connectDots{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-bottom: 0;
+    margin-top: 0;
+}

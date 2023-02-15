@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huffman</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="webTitle">Huffman</div>
+    </header>
+
+    <div class="siteContainer">
+      <form class="stringInput" onsubmit="return false">
+        <input class="inputField" type="text" placeholder="Should be at least 2 different Characters" maxlength="2000" />
+        <button class="submit">encode</button>
+      </form>
+
+      <div class="layerContainer"></div>
+
+      <div class="codeContainer"></div>
+
+      <!--<svg class="line" width="500" height="500">
+        <line x1="2" y1="70" x2="150" y2="180" stroke="lime" />
+      </svg>-->
+    </div>
+
+    <footer>
+      <div class="nameContainer">
+      <div class="name">Igor Martic</div>
+      <div class="name">David Tanaskovic</div>
+      </div>
+    </footer>
+    <script src="encode.js"></script>
+  </body>
+</html>
